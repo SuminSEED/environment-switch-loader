@@ -1,9 +1,3 @@
-[![npm][npm]][npm-url]
-[![deps][deps]][deps-url]
-[![test][test]][test-url]
-[![coverage][cover]][cover-url]
-[![chat][chat]][chat-url]
-
 #Environment Switch Loader
 
 Replace the file to be exported.
