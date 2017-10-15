@@ -14,9 +14,9 @@ module.exports = function(source: string) {
     environment = path.resolve(environment);
     let callback = this.async();
     if (environmentSource === resourcePath) {
-        this.addDependency(environment);
-        fs.readFile(environment, function(err, header) {
-            callback(null, header);
+        fs.readFile(environment, (err, source) => {
+            this.addDependency(environment);
+            callback(null, source);
         });
     } else {
         callback(null, source);
