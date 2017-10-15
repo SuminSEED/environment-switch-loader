@@ -1,0 +1,125 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/yuuki/.nodenv/versions/6.11.3/bin/node',
+1 verbose cli   '/home/yuuki/.nodenv/versions/6.11.3/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/yuuki/project/environment-switch-loader',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/yuuki/.npm/environment-switch-loader/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/yuuki/.npm correctMkdir not in flight; initializing
+10 info lifecycle environment-switch-loader@0.0.1~prepublish: environment-switch-loader@0.0.1
+11 verbose lifecycle environment-switch-loader@0.0.1~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle environment-switch-loader@0.0.1~prepublish: PATH: /home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/bin/node-gyp-bin:/home/yuuki/project/environment-switch-loader/node_modules/.bin:/home/yuuki/.nodenv/versions/6.11.3/bin:/home/yuuki/.nodenv/libexec:/home/yuuki/.nodenv/plugins/nodenv-update/bin:/home/yuuki/.nodenv/plugins/node-build/bin:/home/yuuki/.pyenv/plugins/pyenv-virtualenv/shims:/home/yuuki/.pyenv/shims:/home/yuuki/.nodenv/shims:/home/yuuki/.rbenv/shims:/home/yuuki/.rbenv/bin:/home/yuuki/.nodenv/bin:/home/yuuki/.pyenv/bin:/home/yuuki/bin:/home/yuuki/.local/bin:/home/yuuki/.pyenv/plugins/pyenv-virtualenv/shims:/home/yuuki/.pyenv/shims:/home/yuuki/.nodenv/shims:/home/yuuki/.rbenv/shims:/home/yuuki/.rbenv/bin:/home/yuuki/.nodenv/bin:/home/yuuki/.pyenv/bin:/home/yuuki/bin:/home/yuuki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+13 verbose lifecycle environment-switch-loader@0.0.1~prepublish: CWD: /home/yuuki/project/environment-switch-loader
+14 silly lifecycle environment-switch-loader@0.0.1~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle environment-switch-loader@0.0.1~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/home/yuuki/.npm/environment-switch-loader/0.0.1/package.tgz',
+16 verbose tar pack   '/home/yuuki/project/environment-switch-loader' ]
+17 verbose tarball /home/yuuki/.npm/environment-switch-loader/0.0.1/package.tgz
+18 verbose folder /home/yuuki/project/environment-switch-loader
+19 verbose addLocalTarball adding from inside cache /home/yuuki/.npm/environment-switch-loader/0.0.1/package.tgz
+20 verbose correctMkdir /home/yuuki/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd environment-switch-loader@0.0.1
+22 verbose afterAdd /home/yuuki/.npm/environment-switch-loader/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /home/yuuki/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /home/yuuki/.npm/environment-switch-loader/0.0.1/package/package.json written
+25 silly publish { name: 'environment-switch-loader',
+25 silly publish   version: '0.0.1',
+25 silly publish   description: '',
+25 silly publish   main: 'dist/index.js',
+25 silly publish   scripts:
+25 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+25 silly publish      prepublish: 'npm run build',
+25 silly publish      build: '$(npm bin)/tsc',
+25 silly publish      'sample-1': 'npm run build && $(npm bin)/webpack --config sample/sample-1/webpack.config.js --watch',
+25 silly publish      'sample-2': 'npm run build && $(npm bin)/webpack --config sample/sample-2/webpack.config.js --watch' },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/SuminSEED/environment-switch-loader.git' },
+25 silly publish   author: '',
+25 silly publish   license: 'MIT',
+25 silly publish   bugs: { url: 'https://github.com/SuminSEED/environment-switch-loader/issues' },
+25 silly publish   homepage: 'https://github.com/SuminSEED/environment-switch-loader#readme',
+25 silly publish   devDependencies:
+25 silly publish    { '@types/loader-utils': '^1.1.0',
+25 silly publish      '@types/webpack': '^3.0.13',
+25 silly publish      'babel-core': '^6.26.0',
+25 silly publish      'babel-loader': '^7.1.2',
+25 silly publish      'babel-preset-env': '^1.6.0',
+25 silly publish      'ts-loader': '^2.3.7',
+25 silly publish      typescript: '^2.5.3',
+25 silly publish      webpack: '^3.7.1' },
+25 silly publish   gitHead: '850a013fbe78719fa322151c3d06304263ff2ccb',
+25 silly publish   readme: 'ERROR: No README data found!',
+25 silly publish   _id: 'environment-switch-loader@0.0.1',
+25 silly publish   _shasum: '94035ba0b959889191ba2cbd7fb4cd09a8981ccf',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name environment-switch-loader
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'environment-switch-loader',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'environment-switch-loader',
+30 silly mapToRegistry   name: 'environment-switch-loader',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/environment-switch-loader
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /home/yuuki/.npm/environment-switch-loader/0.0.1/package.tgz
+34 verbose request uri https://registry.npmjs.org/environment-switch-loader
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 12:49:01
+37 verbose request using bearer token for auth
+38 verbose request id b897ed10abb492c3
+39 http request PUT https://registry.npmjs.org/environment-switch-loader
+40 http 403 https://registry.npmjs.org/environment-switch-loader
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '91',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Sun, 15 Oct 2017 03:49:02 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-itm7420-ITM',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1508039342.916807,VS0,VE615',
+41 verbose headers   vary: 'Accept-Encoding, Accept' }
+42 verbose request invalidating /home/yuuki/.npm/registry.npmjs.org/environment-switch-loader on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: You cannot publish over the previously published version 0.0.1. : environment-switch-loader
+44 verbose stack     at makeError (/home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+44 verbose stack     at Request._callback (/home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+44 verbose stack     at Request.self.callback (/home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/node_modules/request/request.js:187:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (/home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/home/yuuki/.nodenv/versions/6.11.3/lib/node_modules/npm/node_modules/request/request.js:969:12)
+45 verbose statusCode 403
+46 verbose pkgid environment-switch-loader
+47 verbose cwd /home/yuuki/project/environment-switch-loader
+48 error Linux 4.4.0-97-generic
+49 error argv "/home/yuuki/.nodenv/versions/6.11.3/bin/node" "/home/yuuki/.nodenv/versions/6.11.3/bin/npm" "publish"
+50 error node v6.11.3
+51 error npm  v3.10.10
+52 error code E403
+53 error You cannot publish over the previously published version 0.0.1. : environment-switch-loader
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]

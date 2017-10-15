@@ -1,0 +1,33 @@
+{
+  "name": "environment-switch-loader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build",
+    "build": "$(npm bin)/tsc",
+    "sample-1": "npm run build && $(npm bin)/webpack --config sample/sample-1/webpack.config.js --watch",
+    "sample-2": "npm run build && $(npm bin)/webpack --config sample/sample-2/webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuminSEED/environment-switch-loader.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuminSEED/environment-switch-loader/issues"
+  },
+  "homepage": "https://github.com/SuminSEED/environment-switch-loader#readme",
+  "devDependencies": {
+    "@types/loader-utils": "^1.1.0",
+    "@types/webpack": "^3.0.13",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.7.1"
+  }
+}
