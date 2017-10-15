@@ -1,14 +1,14 @@
-#Environment Switch Loader
+# Environment Switch Loader
 
 Replace the file to be exported.
 
-##Install
+## Install
 
 ```bash
 npm install --save-dev environment-switch-loader
 ```
 
-##Usage
+## Usage
 
 ```js
 {
@@ -28,7 +28,7 @@ npm install --save-dev environment-switch-loader
 var environment = require('environments/environment.js');
 ```
 
-###Be careful when using ts-loader.
+### Be careful when using ts-loader.
 
 In order to prevent ts-loader from rebuilding dependencies, the transpileOnly flag needs to be set to true.
 
