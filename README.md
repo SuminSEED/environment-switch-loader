@@ -57,5 +57,5 @@ In order to prevent ts-loader from rebuilding dependencies, the transpileOnly fl
     ]
 }
 
-import { environment } from 'environments/environment'
+import { environment } from 'environments/environment';
 ```
