@@ -1,7 +1,7 @@
 {
   "name": "environment-switch-loader",
   "version": "0.0.8",
-  "keyword": [
+  "keywords": [
     "angular-cli",
     "replace",
     "file",
