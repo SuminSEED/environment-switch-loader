@@ -1,7 +1,16 @@
 {
   "name": "environment-switch-loader",
   "version": "0.0.7",
-  "description": "",
+  "keyword": [
+    "angular-cli",
+    "replace",
+    "file",
+    "webpack",
+    "loader",
+    "environment",
+    "switch"
+  ],
+  "description": "Replace the file to be exported.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
