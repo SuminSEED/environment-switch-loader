@@ -13,16 +13,18 @@ npm install --save-dev environment-switch-loader
 ```js
 {
     test: /\.js$/,
-    use: {
-        loader: 'environment-switch-loader',
-        options: {
-            env: NODE_ENV,
-            environmentSource: 'environments/environment.js',
-            environments: {
-                'prodction': 'environments/environment.prod.js'
+    use: [
+        {
+            loader: 'environment-switch-loader',
+            options: {
+                env: process.env.NODE_ENV,
+                environmentSource: './src/environments/environment.js',
+                environments: {
+                    'prodction': './src/environments/environment.prod.js'
+                }
             }
         }
-    }
+    ]
 }
 
 var environment = require('environments/environment.js');
@@ -35,23 +37,25 @@ In order to prevent ts-loader from rebuilding dependencies, the transpileOnly fl
 ```js
 {
     test: /\.ts$/,
-    use: {
+    use: [
         {
             loader: "ts-loader",
             options: {
                 transpileOnly: true
             }
         },
-        loader: 'environment-switch-loader',
-        options: {
-            env: NODE_ENV,
-            environmentSource: 'environments/environment.ts',
-            environments: {
-                'prodction': 'environments/environment.prod.ts'
+        {
+            loader: 'environment-switch-loader',
+            options: {
+                env: process.env.NODE_ENV,
+                environmentSource: './src/environments/environment.ts',
+                environments: {
+                    'prodction': './src/environments/environment.prod.ts'
+                }
             }
         }
-    }
+    ]
 }
 
-import { environment } from '/environments/environment.js'
+import { environment } from 'environments/environment'
 ```
