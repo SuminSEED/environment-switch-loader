@@ -8,7 +8,7 @@ module.exports = function(source: string) {
     let environments = query.environments || {};
     let environmentSource = query.environmentSource || "";
     let resourcePath = this.resourcePath;
-    let environment = getEnvironment(env, environmentSource, environments);
+    let environment = getEnvironment(env, environmentSource, environments, resourcePath);
     if (!environment || !matchSource(environmentSource, resourcePath)) return source;
     let callback = this.async();
     fs.readFile(environment, (err, new_source) => {

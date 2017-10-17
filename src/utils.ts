@@ -15,10 +15,11 @@ export function matchSource(
 export function getEnvironment(
     env: string,
     environmentSource: string | RegExp,
-    environments: { [className: string]: string } | ((env: string, environmentSource: string | RegExp) => string)
+    environments: { [className: string]: string } | ((env: string, environmentSource: string | RegExp, resourcePath: string) => string),
+    resourcePath: string
 ) {
     if (typeof environments === "function") {
-        return path.resolve(environments(env, environmentSource));
+        return path.resolve(environments(env, environmentSource, resourcePath));
     }
     return path.resolve(environments[env]);
 }

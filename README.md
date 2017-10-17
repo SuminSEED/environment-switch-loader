@@ -35,8 +35,8 @@ npm install --save-dev environment-switch-loader
             options: {
                 env: process.env.NODE_ENV,
                 environmentSource: './src/environments/environment.js',
-                environments: function(env, environmentSource) {
-                    return `./src/environments.${env}.js`;
+                environments: function(env, environmentSource, resourcePath) {
+                    return `./src/environments/environment.${env}.js`;
                 }
             }
         }
@@ -87,8 +87,8 @@ In order to prevent ts-loader from rebuilding dependencies, the transpileOnly fl
             options: {
                 env: process.env.NODE_ENV,
                 environmentSource: './src/environments/environment.ts',
-                environments: function(env, environmentSource) {
-                    return `./src/environments.${env}.ts`;
+                environments: function(env, environmentSource, resourcePath) {
+                    return `./src/environments/environment.${env}.ts`;
                 }
             }
         }
