@@ -1,6 +1,6 @@
 import * as loaderUtils from "loader-utils";
 import * as fs from "fs";
-import * as path from "path";
+import { matchSource, getEnvironment } from "./utils";
 
 module.exports = function(source: string) {
     let query = loaderUtils.getOptions(this) || {};
@@ -8,17 +8,14 @@ module.exports = function(source: string) {
     let environments = query.environments || {};
     let environmentSource = query.environmentSource || "";
     let resourcePath = this.resourcePath;
-    let environment = environments[env];
-    if (!environment) return source;
-    environmentSource = path.resolve(environmentSource);
-    environment = path.resolve(environment);
+    let environment = getEnvironment(env, environmentSource, environments);
+    if (!environment || !matchSource(environmentSource, resourcePath)) return source;
     let callback = this.async();
-    if (environmentSource === resourcePath) {
-        fs.readFile(environment, (err, source) => {
+    fs.readFile(environment, (err, new_source) => {
+        if (err) callback(null, source);
+        else {
             this.addDependency(environment);
-            callback(null, source);
-        });
-    } else {
-        callback(null, source);
-    }
+            callback(null, new_source);
+        }
+    });
 };

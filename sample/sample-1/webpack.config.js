@@ -30,9 +30,12 @@ module.exports = {
                         options: {
                             env: "prod",
                             environmentSource: path.join(__dirname, "environment.ts"),
-                            environments: {
-                                "prod": path.join(__dirname, "environment.prod.ts")
+                            environments: function(env, environmentSource) {
+                                return path.join(__dirname, "./environment.prod.ts");
                             }
+                            // environments: {
+                            //     "prod": path.join(__dirname, "environment.prod.ts")
+                            // }
                         }
                     }
                 ]
