@@ -21,5 +21,5 @@ export function getEnvironment(
     if (typeof environments === "function") {
         return path.resolve(environments(env, environmentSource, resourcePath));
     }
-    return path.resolve(environments[env]);
+    return environments[env] ? path.resolve(environments[env]) : environments[env];
 }
