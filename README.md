@@ -49,7 +49,9 @@ var environment = require('environments/environment');
 ### Be careful when using ts-loader.
 
 In order to prevent ts-loader from rebuilding dependencies, the transpileOnly flag needs to be set to true.
+
 This invalidates type checking by ts-loader.
+
 But you guys are supplemented by editor, right?
 
 ```js
