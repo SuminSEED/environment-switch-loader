@@ -4,5 +4,4 @@ export const environment = {
 
 export const environment2 = {
     production: true,
-    production2: true,
 };

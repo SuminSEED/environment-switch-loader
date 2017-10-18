@@ -30,7 +30,7 @@ module.exports = {
                         options: {
                             env: "prod",
                             environmentSource: path.join(__dirname, "environment.ts"),
-                            environments: function(env, environmentSource) {
+                            environments: function(env, environmentSource, resourcePath) {
                                 return path.join(__dirname, "./environment.prod.ts");
                             }
                             // environments: {
