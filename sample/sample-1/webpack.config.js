@@ -1,6 +1,8 @@
 const path = require("path");
-
-module.exports = {
+const webpack = require("webpack");
+const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;    
+                                   
+module.exports = {                 
     entry: path.join(__dirname, "index.ts"),
     output: {
         filename: "bundle.js",
@@ -42,6 +44,9 @@ module.exports = {
             },
         ]
     },
+    plugins: [
+        new UglifyJsPlugin()
+    ],
     resolve: {
         extensions: [".ts"]
     },

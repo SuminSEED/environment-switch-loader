@@ -20,7 +20,7 @@ npm install --save-dev environment-switch-loader
                 env: process.env.NODE_ENV,
                 environmentSource: './src/environments/environment.js',
                 environments: {
-                    'prodction': './src/environments/environment.prod.js'
+                    'production': './src/environments/environment.prod.js'
                 }
             }
         }
@@ -70,7 +70,7 @@ But you guys are supplemented by editor, right?
                 env: process.env.NODE_ENV,
                 environmentSource: './src/environments/environment.ts',
                 environments: {
-                    'prodction': './src/environments/environment.prod.ts'
+                    'production': './src/environments/environment.prod.ts'
                 }
             }
         }

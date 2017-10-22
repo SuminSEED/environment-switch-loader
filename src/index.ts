@@ -1,3 +1,4 @@
+import * as webpack from "webpack";
 import * as loaderUtils from "loader-utils";
 import * as fs from "fs";
 import { matchSource, getEnvironment } from "./utils";
